@@ -1,0 +1,21 @@
+body {
+    background-color:  pink;
+}
+  
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+button{
+    margin-top: 1rem;
+    background-color: blue;
+}
+
+input:required {
+    border: 2px solid;
+}   
+
+input:invalid {
+    border: 2px solid red;
+}
