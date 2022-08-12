@@ -16,6 +16,9 @@ input:required {
     border: 2px solid;
 }   
 
-input:invalid {
+input:valid {
+    border: 2px solid green;
+}
+input.error{
     border: 2px solid red;
 }

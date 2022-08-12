@@ -1,54 +1,60 @@
 <link rel = "stylesheet" href = "main.css"> <!-- must link in order for styling-->
 <main>
+   
     <body>
-    <h1>Event Booking Form</h1>
+    <h1 id="lbl">Event Booking Form</h1>
+    <div id="form" class="show">  
+<form class="inquiry-form"  novalidate>
+<div>
 <label for="name"><b>Name(required)</b></label>
-<input required type="text" id="name" autocomplete=""name>
+<input required type="text" id="name"  autocomplete="name" aria-labelledby="name">
 </div>
 <div>
 <label for="email"><b>Email(required)</b></label>
-<input  required type="email" id="email">
+<input  required type="email" id="email" autocomplete="email" aria-labelledby="email">
 </div>
-<labe for="tel"><b>Telephone Number(required)</b></label>
-<input required type="tel" id="tel">
+<label for="tel"><b>Telephone Number(required)</b></label>
+<input required type="tel" id="tel"  autocomplete="tel" aria-labelledby="tel">
 </div>
 <div>
     <fieldset>
-        <Legend><b>How would you like to be contacted?</b></legend>
+        <Legend id="lgd"><b>How would you like to be contacted?</b></legend>
             <label for="email">Email</label>
-            <input type="radio" name="contact" value="email" id="email">
+            <input type="radio" name="contact" value="email" id="email" aria-labelledby="lgd email">
     
             <label for ="phone">Phone</label>
-            <input type="radio" name="contact" value="phone" id="phone">
+            <input type="radio" name="contact" value="phone" id="phone" aria-labelledby="lgd phone">
         </fieldset>
     </div>
 <div>
 <label for="date"><b>Event Date(required)</b</label>
-<input required type="date" id="date" value="address">
+<input required type="date" id="date" value="address" aria-labelledby="date" >
 </div>
         <div>
             <label for="option"><b>What time of day is event?(required)</b></label>
-<select required id="option" name="option">
+<select required id="option" name="option" aria-labelledby="option">
     <option value="day">Daytime</option>
     <option value="evening">Evening</option>
     </select>
 </div>
 <div>
     <label for="address"></label><b>Event Address(required)</b></label>
-    <input required type="text" id="address">
+    <input required type="text" id="address" aria-labelledby="address">
 </div>
 <div>
 <label for ="comment"><b>Tell us about your upcoming event(ie- theme, color scheme)(required)</b></label>
-<textarea  require id="comment" name="comment"></textarea>
+<textarea  require id="comment" name="comment" aria-labelledby="comment"></textarea>
 </div>
 <div>
 <label for="photos"><b>Please upload inspirational photos</b></label>
-<input type="file" id="photos">
+<input type="file" id="photos" aria-labelledby="photos">
 <div>
-    <label for="options"><b>Yes! Add me to your monthly newsletter</b></label>
-    <input type="checkbox" id="options"> 
+    <label for="subscribe"><b>Yes! Add me to your monthly newsletter</b></label>
+    <input type="checkbox" id="options" aria-labelledby="subscribe"> 
      </div>
-<button>Submit</button>
+     </div>
+     <div>
+<button id="button" type="submit">Submit</button>
 </form>
 </div>
 </body>
