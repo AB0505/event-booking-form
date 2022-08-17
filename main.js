@@ -1,14 +1,17 @@
-const inquiryForm= document.querySelector(inquiry-form);
-const submitForm= document.querySelector(button);
-
-inquiryForm.addEventListener('submit', function(e) {
+function validateForm() {
+const inquiryForm= document.querySelector("#form-field");
+const submitForm= document.querySelector(".button");
+}
+inquiryForm.addEventListener('click', function(e) {
     if(!inquiryForm.validity.valid) {
         inquiryForm.classList.add('.error');
         e.preventDefault();
     }
 })
 
-inquiryForm
 submitForm.addEventListener('click', function(){
-
+    if(!submitForm.validity.valid) {
+        inquiryForm.classList.add('.error');
+        e.preventDefault();
+    }
 })
